@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tìm hiểu về Node.js</title>
+</head>
+<body>
+
+    <header>
+        <h1>Giới thiệu về Node.js</h1>
+        <p>Môi trường thực thi JavaScript phía máy chủ mạnh mẽ và phổ biến nhất hiện nay.</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>1. Tổng quan về Node.js</h2>
+            <p>Node.js là một môi trường thực thi (runtime environment) JavaScript mã nguồn mở, chạy trên nền tảng V8 JavaScript Engine của Google Chrome. Node.js cho phép các lập trình viên chạy mã JavaScript ngay trên máy chủ (server-side) thay vì chỉ chạy trên trình duyệt web.</p>
+            <p>Node.js được sử dụng để xây dựng các ứng dụng mạng nhanh, có khả năng mở rộng cao, các ứng dụng thời gian thực (real-time), API RESTful và hệ thống backend cho trang web hoặc ứng dụng di động.</p>
+            
+            <p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Node.js_logo.svg/960px-Node.js_logo.svg.png?utm_source=vi.wikipedia.org&utm_campaign=index&utm_content=thumbnail" alt="Logo chính thức của Node.js" width="300">
+                <img src="https://asia-1-fileserver-2.stringee.com/0/asia-1_1_FCERSUCW2K816L9/1708771183-event-loop-trong-nodejs-hinh-1.png" alt="Sơ đồ kiến trúc Event Loop trong Node.js" width="400">
+            </p>
+        </section>
+        <section>
+            <h2>2. Các đặc điểm nổi bật</h2>
+            <ul>
+                <li><strong>Mô hình I/O bất đồng bộ (Asynchronous & Event-Driven):</strong> Tất cả các API của Node.js đều không chặn (non-blocking), giúp xử lý nhiều tác vụ cùng lúc mà không cần chờ đợi.</li>
+                <li><strong>Tốc độ xử lý cực nhanh:</strong> Được xây dựng trên V8 JavaScript Engine của Google Chrome, Node.js biên dịch và thực thi mã JavaScript rất nhanh.</li>
+                <li><strong>Đơn luồng (Single-Threaded):</strong> Sử dụng một luồng duy nhất kết hợp với Event Loop để xử lý hàng nghìn kết nối đồng thời.</li>
+                <li><strong>Sử dụng một ngôn ngữ duy nhất:</strong> Lập trình viên có thể sử dụng JavaScript cho cả phía Frontend và Backend.</li>
+                <li><strong>Hệ sinh thái NPM phong phú:</strong> Quản lý gói NPM (Node Package Manager) sở hữu hàng triệu thư viện mã nguồn mở có sẵn.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>3. Lịch sử các phiên bản Node.js</h2>
+            <table border="1">
+                <tr>
+                    <th>Phiên bản</th>
+                    <th>Năm phát hành</th>
+                    <th>Tính năng quan trọng</th>
+                    <th>Trạng thái hỗ trợ</th>
+                </tr>
+                <tr>
+                    <td>Node.js 0.10</td>
+                    <td>2013</td>
+                    <td>Cải tiến Streams API và Event Loop</td>
+                    <td>Hết hỗ trợ</td>
+                </tr>
+                <tr>
+                    <td>Node.js 4.0</td>
+                    <td>2015</td>
+                    <td>Hợp nhất Node.js và io.js, hỗ trợ ES6</td>
+                    <td>Hết hỗ trợ</td>
+                </tr>
+                <tr>
+                    <td>Node.js 18.0</td>
+                    <td>2022</td>
+                    <td>Tích hợp sẵn Fetch API và Test Runner</td>
+                    <td>LTS (Hỗ trợ lâu dài)</td>
+                </tr>
+                <tr>
+                    <td>Node.js 20.0</td>
+                    <td>2023</td>
+                    <td>Cải tiến V8 Engine, hỗ trợ Permission Model</td>
+                    <td>LTS (Hỗ trợ lâu dài)</td>
+                </tr>
+            </table>
+        </section>
+        <section>
+            <h2>4. Ưu điểm và Hạn chế</h2>
+            
+            <h3>Ưu điểm</h3>
+            <ul>
+                <li>Hiệu năng cao đối với các ứng dụng I/O nặng và real-time (Chat, Streaming).</li>
+                <li>Tiết kiệm thời gian phát triển nhờ dùng chung ngôn ngữ JavaScript cho cả Stack.</li>
+                <li>Cộng đồng hỗ trợ lớn và vô số thư viện miễn phí trên NPM.</li>
+            </ul>
+
+            <h3>Hạn chế</h3>
+            <ol>
+                <li>Khả năng xử lý kém đối với các tác vụ tính toán nặng (CPU-intensive) như xử lý video, AI/ML.</li>
+                <li>Mô hình Callback dễ dẫn đến hiện tượng "Callback Hell" nếu không quản lý tốt bằng Promise/Async-Await.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>5. Tài liệu tham khảo</h2>
+            <p>Bạn có thể tìm hiểu thêm thông tin về Node.js qua các liên kết bên dưới:</p>
+            <ul>
+                <li><a href="https://nodejs.org/" target="_blank">Trang chủ chính thức của Node.js</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Glossary/Node.js" target="_blank">Tài liệu giới thiệu Node.js trên MDN Web Docs</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>2026 Bài tập Web HTML buổi 1 - Giới thiệu công nghệ Node.js</p>
+    </footer>
+
+</body>
+</html>
